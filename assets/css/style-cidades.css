@@ -1,0 +1,73 @@
+.inicio-cidades{
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 109vh;
+}
+.inicio-cidade-berlim{
+    background-image: url(../img/berlimpagina.png)
+}
+.inicio-cidade-copenhagen{
+    background-image: url(../img/copenhagenpagina.png)
+}
+.inicio-cidade-estocolmo{
+    background-image: url(../img/estocolmopagina.png)
+}
+.inicio-cidade-londres{
+    background-image: url(../img/londrespagina.png)
+}
+.inicio-cidade-oslo{
+    background-image: url(../img/oslopagina.png)
+}
+.inicio-cidade-tokio{
+    background-image: url(../img/tokiopagina.png)
+}
+
+
+
+/* Página das cidades Cidades */
+
+
+.title-cidades p{
+    font-size: 32px;
+}
+.caracteristicas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.caracteristica{
+    width: 80vw;
+    max-width: 500px;
+    height: auto;
+    margin: 12px;
+    line-height: 1.8;
+    text-align: justify;
+}
+#nav-buttons-cidades{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.a-nav-cidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    height: 11vh;
+    width: 50%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: .2s linear background;
+}
+.a-nav-cidade:hover{
+    background-color: rgb(255, 255, 255);
+}

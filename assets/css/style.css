@@ -1,0 +1,386 @@
+/* Variaveis */
+
+:root{
+    --first-color: #d3f0db;
+    --second-color: #aae2c6;;
+    --third-color: rgb(191, 237, 190);
+    --fourty-color: rgb(151, 204, 151);
+    --dart-color: rgb(142, 151, 141);
+}
+
+
+
+/* Fontes */
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Teko;
+    src: url(Teko/Teko-Light.ttf);
+}
+
+/* Zerar Margin  */
+
+*{
+    margin: 0;
+}
+
+
+/* Body */
+
+.content-index{
+    background: white;
+    font-size: 15px;
+    font-family: poppins;
+}
+
+
+
+/* Containers principais */
+
+.container-1{
+    margin-top: 20px;
+    padding: 0 20px;
+    letter-spacing: .7px;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+
+/* Cabeçalho da página */
+
+.cabecalho{
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.title p{
+    margin: 0 70px;
+}
+#nav-buttons{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.a-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+    font-family: poppins;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    height: 11vh;
+    width: 25%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: .2s linear background;
+}
+.a-nav:hover{
+    background-color: rgb(255, 255, 255);
+}
+.img-ods{
+    height: 9vh;
+    margin-top: 1vh;
+    margin-left: 20px;
+}
+
+
+
+/* Início da página (background image) */
+
+.inicio{
+    background-image: url(../img/design.png) ;
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    height: 109vh;
+}
+.title{
+    padding: 0;
+    height: 90vh;
+    text-align: center;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-shadow: 5px 5px 5px black;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.title h4{
+    font-size: 25px;
+}
+
+
+
+/* Conceito cidades sustentáveis */
+
+.conceito-paragrafo1{
+    margin: 15px 0 10px;
+}
+
+
+
+/* Cards cidades sustentáveis */
+
+.top-cidades{
+    padding: 40px 15px;
+    background-color: var(--first-color);
+    border-radius: 6vw 0 6vw 0;
+}
+.top-cidades h2{
+    margin: 0 0 30px 1vw;
+}
+.cards-cidades{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cidades{
+    border: solid 2px #ffffff00;
+    border-radius: 15px;
+    margin: 10px 20px;
+    width: 60%;
+    min-width: 300px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--second-color);
+    transition: .2s linear background;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.296);;
+}
+.cidades:hover{
+    background-color: rgba(230, 255, 242, 0.664);
+}
+.nome-cidade{
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+.paragrafo-cidade{
+    margin-top: 10px;
+    letter-spacing: .5px;
+}
+.figure-image-card{
+    margin: 15px 0;
+}
+.figure-image-card img{
+    border-radius: 10px;
+    width: 256px;
+    height: 144px;
+}
+.a-cidade{
+    border-radius: 8px;
+    padding: 7px 25px;
+    background-color: white;
+    transition: .4s linear border;
+    border: solid 2px rgb(255, 255, 255);
+    text-decoration: none;
+    color: black;
+}
+.a-cidade:hover{
+    border-color: rgb(207, 207, 207);
+}
+
+
+
+/* Sustentabilidade Brasil */
+
+.text-brasil{
+    margin-bottom: 10px;
+}
+.brasil-paragrafo1{
+    margin: 15px 0 10px;
+}
+.img-brasil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.figure-image-brasil img{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+
+/* Atitudes Sustentáveis */
+
+.atitudes{
+    margin-top: 50px;
+}
+.atitudes h2{
+    margin-bottom: 10px;
+}
+.li-atitude{
+    list-style-image: url(../img/imagemfolhali.png);
+}
+.li-atitude h4{
+    margin-top: 12px;
+}
+.atitude-paragrafo{
+    margin-right: 10px;
+}
+
+
+
+/* Formulário */
+
+.formulario{
+    padding: 20px 10px;
+    background: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    border-radius: 6vw 0 6vw 0;
+}
+.formulario p{
+    text-align: center;
+    margin: 15px 0;
+}
+.a-formulario{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 8px 25px;
+    width: 33vw;
+    background-color: white;
+    border: solid 2px rgb(255, 255, 255);
+    text-decoration: none;
+    color: black;
+    transition: .4s linear border;
+}
+.a-formulario:hover{
+    border-color: rgb(207, 207, 207);
+}
+
+
+
+/* Outros ODS */
+
+.ods h2{
+    margin-bottom: 20px;
+}
+.ods .paragrafo{
+    margin-bottom: 10px;
+}
+.figure-image-ods{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.image-ods{
+    width: 90vw;
+    max-width: 750px;
+    margin: 0;
+}
+
+
+
+/* Fotter */
+
+footer{
+    margin-top: 10vh;
+    background: #468657;
+    border-top: solid #00000077 0.1vh;
+    border-radius: 6vh 0 0;
+    padding-top: 3vh;
+    font-family: poppins;
+    color: #ffffff;
+}
+.div_footer div:first-child{
+    padding-right: 5px;
+    font-size: 15px;
+}
+.div_footer div:nth-child(2){
+    padding-left: 5px;
+    font-size: 15px;
+}
+.over_footer{
+    display: flex;
+}
+.social_footer{
+    margin: auto 2vh;
+    width: 50%;
+    margin-left: 10vh;
+}
+.social_footer p{
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.social_footer h4{
+    font-size: 2vh;
+}
+.social_footer1{
+    display: flex;
+}
+.social{
+    margin-bottom: 1vh;
+}
+.social div{
+    width: 3%;
+    display: inline-block;
+    margin-right: 3vh;
+}
+.about_footer{
+    margin-left: 5vh;
+    width: 50%;
+    
+}
+.about_footer h4{
+    font-size: 2vh;
+}
+.about_footer p{
+    font-size: 2vh;
+}
+.under_footer{
+    background-color: #457451;
+    border-top: solid #00000027 0.3vh;
+    display: flex;
+    margin: auto 1vh auto 1vh;
+    padding-top: 1vh;
+    padding-left: 2vh;
+}
+.under1{
+    margin: 1vh;
+    font-size: 1.4vh;
+    width: 5%;
+}
+.under2{
+    width: 75%;
+    margin: 1vh;
+    font-size: 1.4vh;
+    float: right;
+    text-align: right;
+}
+
