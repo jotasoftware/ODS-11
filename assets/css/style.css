@@ -2,11 +2,10 @@
 
 :root{
     --first-color: #d3f0db;
-    --second-color: #aae2c6;;
-    --third-color: rgb(191, 237, 190);
-    --fourty-color: rgb(151, 204, 151);
-    --dart-color: rgb(142, 151, 141);
+    --second-color: #aae2c6;
+    --dart-color: #468657;
 }
+
 
 
 
@@ -257,7 +256,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 35vh;
     border-radius: 6vw 0 6vw 0;
 }
 .formulario p{
@@ -309,7 +308,7 @@
 
 footer{
     margin-top: 10vh;
-    background: #468657;
+    background: var(--dart-color);
     border-top: solid #00000077 0.1vh;
     border-radius: 6vh 0 0;
     padding-top: 3vh;
