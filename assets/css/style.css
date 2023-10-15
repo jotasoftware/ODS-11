@@ -8,7 +8,6 @@
 
 
 
-
 /* Fontes */
 
 @font-face {
@@ -19,6 +18,9 @@
     font-family: Teko;
     src: url(Teko/Teko-Light.ttf);
 }
+
+
+
 
 /* Zerar Margin  */
 
@@ -328,7 +330,7 @@ footer{
 }
 .social_footer{
     margin: auto 2vh;
-    width: 50%;
+    width: 40%;
     margin-left: 10vh;
 }
 .social_footer p{
@@ -342,6 +344,7 @@ footer{
 }
 .social_footer1{
     display: flex;
+    flex-wrap: wrap;
 }
 .social{
     margin-bottom: 1vh;
@@ -351,9 +354,12 @@ footer{
     display: inline-block;
     margin-right: 3vh;
 }
+.social path:hover{
+    fill: white;
+}
 .about_footer{
     margin-left: 5vh;
-    width: 50%;
+    width: 60%;
     
 }
 .about_footer h4{
@@ -368,18 +374,10 @@ footer{
     display: flex;
     margin: auto 1vh auto 1vh;
     padding-top: 1vh;
-    padding-left: 2vh;
-}
-.under1{
-    margin: 1vh;
     font-size: 1.4vh;
-    width: 5%;
+    text-align: center;
 }
-.under2{
-    width: 75%;
-    margin: 1vh;
-    font-size: 1.4vh;
-    float: right;
-    text-align: right;
+.under_footer p{
+    width: 100%;
 }
 
