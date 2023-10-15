@@ -34,9 +34,9 @@
 
 .container{
   width: 80vw;
-  height: calc(1vw * 1vh);
+  height: 90vh;
   padding-top: 2.4vh;
-  padding-bottom: 1rem;;
+  padding-bottom: 1rem;
   background: none;
   margin-top: 5vh;
   margin-bottom: 100px;
@@ -53,6 +53,7 @@
 .form_first{
   display: flex;
   justify-content: center;
+
 }
 .form_second{
   display: grid;
@@ -86,7 +87,7 @@
   background: rgba(255, 255, 255, 0.61);
   font-size: 100%;
   color: #222222;
-  height: calc(1vh * 1vw);
+  height: 5vh;
   margin-bottom: 2vh;
 }
 
@@ -98,12 +99,14 @@ textarea:focus, input:focus, select:focus{
 .area input[name=nome]{
   width: 47vw;
   display: block;
-  margin-right: 2vw;
-  padding-left: 1vh;
+  margin-right: 1vw;
+  padding-left: 1vw;
+  
 }
 .area label[for=nome]{
     width: 40vw;
     margin-right: 5vw;
+    
 }
 /*************************************************************/
 .area input[name=idade]{
@@ -157,13 +160,13 @@ textarea:focus, input:focus, select:focus{
 }
 /*************************************************************/
 .area input[type=submit]{
-  width: 12vw;
+  width: calc(7vh + 7vw);
   height: 5vh;
   font-family: teko;
   font-size: 3.4vh;
   color: #444444;
   transition: 0.2s;
-  margin-top: calc(1vw * 2vh);
+  margin-top: calc(1vw * 2);
   border-radius: 1.4vh;
   padding-bottom: 0.8vh;
 }
