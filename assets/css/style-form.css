@@ -36,7 +36,7 @@
   width: 80vw;
   height: auto;
   padding-top: 2.4vh;
-  padding-bottom: 1rem;
+  padding-bottom: 2.4vh;
   background: none;
   margin-top: 5vh;
   margin-bottom: 100px;
@@ -47,6 +47,9 @@
 .main{
   display: grid;
   place-content: center;
+}
+.main-1{
+  margin-top: 50px;
 }
 /*************************************************************/
 
@@ -159,7 +162,9 @@ textarea:focus, input:focus, select:focus{
   margin-right: -0.1vw;
 }
 /*************************************************************/
-.area input[type=submit]{
+#pessoaForm.btn{
+  cursor: pointer;
+  border: solid rgb(134, 134, 134) 0.4px;
   width: calc(7vh + 7vw);
   height: 5vh;
   font-family: teko;
@@ -171,15 +176,63 @@ textarea:focus, input:focus, select:focus{
   padding-bottom: 0.8vh;
 }
 
-.area input[type=submit]:hover{
-  
+#pessoaForm.btn:hover{
+  border-style: none;
   background: #57c775;
   color: #fff;
   border-radius: 1.4vh;
-  box-shadow: 0 0 5px #57c775,
-              0 0 25px #57c775,
-              0 0 50px #57c775,
-              0 0 100px #57c775;
+  box-shadow: 0 0 1px #57c775,
+              0 0 2px #57c775,
+              0 0 5px #57c775,
+              0 0 10px #57c775;
+}
+/*************************************************************/   
+#btnApagarTudo.btn{
+  cursor: pointer;
+  border: solid rgb(134, 134, 134) 0.4px;
+  width: calc(10vh + 10vw);
+  height: 6vh;
+  font-family: teko;
+  font-size: 3.4vh;
+  color: #444444;
+  transition: 0.2s;
+  border-radius: 1.4vh;
+}
+#btnApagarTudo.btn:hover{
+  border-style: none;
+  background: #db4747b2;
+  color: #fff;
+  border-radius: 1.4vh;
+  box-shadow: 0 0 1px #db4747b2,
+              0 0 2px #db4747b2,
+              0 0 5px #db4747b2,
+              0 0 8px #db4747b2;
+}
+
+/*************************************************************/   
+#pesquisarNome{
+  width: calc(18vh + 18vw);
+}
+#btnPesquisarNome.btn{
+  cursor: pointer;
+  border: solid rgb(134, 134, 134) 0.4px;
+  width: calc(8vh + 8vw);
+  height: 6vh;
+  font-family: teko;
+  font-size: 3.4vh;
+  color: #444444;
+  transition: 0.2s;
+  border-radius: 1.4vh;
+}
+#btnPesquisarNome.btn:hover{
+  border-style: none;
+  background: #93db69;
+  color: #fff;
+  border-radius: 1.4vh;
+  box-shadow: 0 0 5px #93db69,
+              0 0 25px #93db69,
+              0 0 50px #93db69,
+              0 0 100px #93db69;
 }
 /*************************************************************/          
 .area select{
@@ -207,4 +260,75 @@ textarea:focus, input:focus, select:focus{
 }
 .form_fourth label{
     width: 60vw;
+}
+
+
+
+/*************************************************************/
+
+
+.text-form{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pessoas{
+  text-decoration: none;
+  padding: 0 5vw;
+}
+.pessoa{
+  list-style: none;
+  padding-bottom: 10px;
+  margin: 0;
+  width: 100%;
+  border-bottom: solid #00000077 0.1vh;
+}
+.close {
+  position: absolute;
+  right: 15vw;
+}
+.close:hover {
+  background-color:blueviolet;
+  color: white;
+}
+
+
+
+.linha1{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+}
+
+.linha2{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+}
+
+.btn{
+  height: 40px;
+  width: 15vw;
+}
+
+#pesquisarNome{
+  border-radius: 2vh;
+  border: solid #00000077 0.1vh;
+  font-family: poppins;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.61);
+  font-size: 15px;
+  color: #222222;
+  height: 5vh;
+}
+
+ul{
+  padding: 10px;
+}
+
+li{
+  list-style-type: none;
+  margin: 0;
 }
