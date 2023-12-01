@@ -9,6 +9,7 @@
 
 </head>
 <body class="content-form">
+    
     <header class="header-form">
         <div class="cabecalho-form">
             <a href="../index.html"><img src="../assets/img/ods11.png"  alt="" class="img-ods"></a>
@@ -16,10 +17,11 @@
                 <a href="#nav-form" class="a-nav">Formulário</a>
             </nav>
         </div>
-        <h1 id="nav-form">Formulário</h1>
     </header>
-    <div class="main">
+    
+    <div class="main main-1">
         <div class="container">
+            <h1 class="text-form">Formulário</h1>
             <div>
                 <form class="area">
                     <div class="form_first">
@@ -45,33 +47,33 @@
                             <label for="estado">Estado</label>
                             <select name="estado" id="estado">
                                 <option value="opc" selected>Selecione</option>
-                                <option value="acre">Acre</option>
-                                <option value="alagoas">Alagoas</option>
-                                <option value="amapa">Amapá</option>
-                                <option value="amazonas">Amazonas</option>
-                                <option value="bahia">Bahia</option>
-                                <option value="ceara">Ceará</option>
-                                <option value="distrito-federal">Distrito Federal*</option>
-                                <option value="espirito-santo">Espírito Santo</option>
-                                <option value="goias">Goiás</option>
-                                <option value="maranhao">Maranhão</option>
-                                <option value="mato-grosso">Mato Grosso</option>
-                                <option value="mato-grosso-do-sul">Mato Grosso do Sul</option>
-                                <option value="minas-gerais">Minas Gerais</option>
-                                <option value="para">Pará</option>
-                                <option value="paraiba">Paraíba</option>
-                                <option value="parana">Paraná</option>
-                                <option value="pernambuco">Pernambuco</option>
-                                <option value="piaui">Piauí</option>
-                                <option value="rio-de-janeiro">Rio de Janeiro</option>
-                                <option value="rio-grande-do-norte">Rio Grande do Norte</option>
-                                <option value="rio-grande-do-sul">Rio Grande do Sul</option>
-                                <option value="rondonia">Rondônia</option>
-                                <option value="roraima">Roraima</option>
-                                <option value="santa-catarina">Santa Catarina</option>
-                                <option value="sao-paulo">São Paulo</option>
-                                <option value="sergipe">Sergipe</option>
-                                <option value="tocantins">Tocantins</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal*</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MG">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
                             </select>
                         </div>
                     </div>
@@ -85,13 +87,34 @@
                             <textarea name="text2" id="text2" cols="50" rows="5"></textarea>
                         </div>
                     </div>
-                    <div class="form_fifth">
-                        <input type="submit" value="Enviar">
-                    </div>
                 </form>
+                <div class="form_fifth">
+                    <button id="pessoaForm" class="btn">Enviar</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="main">
+        <div class="container">
+            <h1 class="text-form">Formulários preenchidos</h1>
+            <div class="linha1">
+                <div class="linha2">
+                        <input type="text" id="pesquisarNome" name="nome" placeholder="Digite um nome">
+                        <button id="btnPesquisarNome" class="btn" onclick="pesquisarNome()">Pesquisar</button>
+                </div>
+                <div>
+                    <button id="btnApagarTudo" class="btn" onclick="apagarTudo()">Apagar tudo</button>
+                </div>
+            </div>
+            <div class="div-pessoas">
+                <ul id="pessoasList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="over_footer">
             <div class="about_footer">
@@ -154,19 +177,9 @@
         </div>
        
         <div class="under_footer">
-            <div class="under1">
-                <p>Home</p>
-            </div>
-            <div class="under1">
-                <p>Cards</p>
-            </div>
-            <div class="under1">
-                <p>Contact</p>
-            </div>
-            <div class="under2">
-                <p>Copyright &copy; 2023 JJ Solutions – Todos os direitos reservados</p>
-            </div>
+            <p>Copyright &copy; 2023 JJ Solutions – Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
